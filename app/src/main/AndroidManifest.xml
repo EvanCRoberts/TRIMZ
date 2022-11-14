@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trimz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/trimz_1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/trimzicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TRIMZ">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.TRIMZ.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

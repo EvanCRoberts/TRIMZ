@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545786271106",
+    "project_id": "trimz-80374",
+    "storage_bucket": "trimz-80374.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545786271106:android:c0c03609a5b0151b99eb9b",
+        "android_client_info": {
+          "package_name": "com.example.TRIMZ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545786271106-7qpmn6cslirkrau0v734ihhegogc4vbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2Z2DtyY2CUh6kVJfWRFKVZo2uS2bSl6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545786271106-7qpmn6cslirkrau0v734ihhegogc4vbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
