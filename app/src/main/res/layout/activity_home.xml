@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_color"
     tools:context=".HomeActivity">
+
     <TextView
         android:id="@+id/welcomeTextHP"
         android:layout_width="326dp"
@@ -14,14 +15,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
         android:background="@color/bg_color"
         android:fontFamily="@font/bebas_neue"
         android:text="Welcome!"
         android:textAllCaps="true"
         android:textColor="@color/TRIMZ_Orange"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollViewHP"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,16 +60,6 @@
                 app:cardPreventCornerOverlap="false"
                 app:cardUseCompatPadding="false">
 
-                <!--
-                In the above cardview widget
-                cardelevation property will give elevation to your card view
-                card corner radius will provide radius to your card view
-                card background color will give background color to your card view
-                card max elevation will give the cardview maximum elevation
-                card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
-                card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
-                below are the two widgets imageview and text view we are displaying inside our card view.
-                -->
                 <TextView
                     android:id="@+id/cardViewHP1text"
                     android:layout_width="match_parent"
@@ -164,15 +156,26 @@
         </LinearLayout>
     </ScrollView>
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/botmenu"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavBarHP"
-        android:layout_width="409dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollViewHP" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="409dp"
+            android:layout_height="595dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTextHP"
+            app:navGraph="@navigation/bottombar_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

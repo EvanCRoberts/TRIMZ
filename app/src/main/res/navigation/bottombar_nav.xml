@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottombar_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/bookingsScrollingFragment"
+        android:name="com.example.trimz.BookingsScrollingFragment"
+        android:label="fragment_bookings_scrolling"
+        tools:layout="@layout/fragment_bookings_scrolling" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.trimz.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.trimz.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.trimz.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
