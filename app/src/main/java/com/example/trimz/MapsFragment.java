@@ -15,7 +15,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
+// MAPS API KEY : AIzaSyBwkHP07CfafZUm-m4leAupZeuInWlhKdQ
+// SHA - 1  Key : 57:BA:B5:72:65:EA:69:0D:72:4C:D9:20:38:07:D3:07:71:88:4B:B1
 public class MapsFragment extends Fragment {
 
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
@@ -49,7 +50,7 @@ public class MapsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         SupportMapFragment mapFragment =
-                (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+                (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.mapsFragment);
         if (mapFragment != null) {
             mapFragment.getMapAsync(callback);
         }
