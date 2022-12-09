@@ -7,26 +7,13 @@
     android:background="@color/bg_color"
     tools:context=".BookingsScrollingFragment">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="111dp"
-        android:layout_height="119dp"
-        android:layout_below="@id/textView6"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="151dp"
-        android:src="@drawable/calendar_orange" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:drawableBottom="@drawable/big_calendar"
         android:fontFamily="@font/bebas_neue"
         android:gravity="center"
         android:text="Your Bookings"
@@ -37,13 +24,11 @@
         android:id="@+id/scrollViewHP"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageView4"
+        android:layout_below="@+id/textView6"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
         android:background="@color/bg_color"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <LinearLayout
@@ -125,11 +110,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewHFrag2"
+                android:id="@+id/bookingCard2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/TRIMZ_Orange"
+                app:cardBackgroundColor="@color/grey"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
@@ -137,36 +122,75 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:id="@+id/cardViewHFrag2text"
+                    android:id="@+id/bookingCard2DateTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/bebas_neue"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:shadowColor="#000000"
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Top Rated Barbers in Your Area"
+                    android:text="Date / Time"
                     android:textColor="@color/white"
-                    android:textSize="16sp"></TextView>
+                    android:textSize="30sp"/>
 
-                <ImageView
-                    android:id="@+id/cardViewHFrag2image"
-                    android:layout_width="306dp"
-                    android:layout_height="146dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/topbarberimage" />
+                <TextView
+                    android:id="@+id/bookingCard2BarberInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Barber Name, Rating"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/bookingCard2MeetingInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Meeting Info"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+                <Button
+                    android:id="@+id/bookingCard2Cancel"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Cancel?"
+                    app:backgroundTint="#B83232"
+                    app:cornerRadius="20dp" />
+
+
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewHFrag3"
+                android:id="@+id/bookingCard3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/TRIMZ_Orange"
+                app:cardBackgroundColor="@color/grey"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
@@ -174,36 +198,62 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:id="@+id/cardViewHFrag3text"
+                    android:id="@+id/bookingCard3DateTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/bebas_neue"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:shadowColor="#000000"
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Barbers Available Right Now"
+                    android:text="Date / Time"
                     android:textColor="@color/white"
-                    android:textSize="16sp"></TextView>
+                    android:textSize="30sp"/>
 
-                <ImageView
-                    android:id="@+id/cardViewHFrag3image"
-                    android:layout_width="306dp"
-                    android:layout_height="146dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/availnowbarber" />
+                <TextView
+                    android:id="@+id/bookingCard3BarberInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Barber Name, Rating"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/bookingCard3MeetingInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Meeting Info"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewHFrag4"
+                android:id="@+id/bookingCard4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/TRIMZ_Orange"
+                app:cardBackgroundColor="@color/grey"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
@@ -211,27 +261,53 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:id="@+id/cardViewHFrag4text"
+                    android:id="@+id/bookingCard4DateTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/bebas_neue"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:shadowColor="#000000"
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Newest barbers in your area"
+                    android:text="Date / Time"
                     android:textColor="@color/white"
-                    android:textSize="16sp"></TextView>
+                    android:textSize="30sp"/>
 
-                <ImageView
-                    android:id="@+id/cardViewHFrag4image"
-                    android:layout_width="306dp"
-                    android:layout_height="146dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/barber_new" />
+                <TextView
+                    android:id="@+id/bookingCard4BarberInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Barber Name, Rating"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/bookingCard4MeetingInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Meeting Info"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </androidx.cardview.widget.CardView>
 

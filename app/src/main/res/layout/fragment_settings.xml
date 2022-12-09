@@ -100,4 +100,15 @@
         android:textColor="@color/TRIMZ_Orange"
         android:textSize="30dp"
         tools:text="Settings" />
+
+    <Button
+        android:id="@+id/barberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Register As A Barber?"
+        app:backgroundTint="@color/TRIMZ_Orange" />
+
 </RelativeLayout>

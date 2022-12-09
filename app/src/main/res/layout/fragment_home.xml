@@ -8,11 +8,8 @@
 
     <ScrollView
         android:id="@+id/scrollViewHP"
-        android:layout_width="406dp"
+        android:layout_width="match_parent"
         android:layout_height="733dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
         android:background="@color/bg_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,19 +34,18 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
                     android:id="@+id/cardViewHFrag1text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bebas_neue"
                     android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
                     android:text="View Most Recent Barber"
                     android:textColor="@color/white"
-                    android:textSize="16sp">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <ImageView
                     android:id="@+id/cardViewHFrag1image"
@@ -75,19 +71,18 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
                     android:id="@+id/cardViewHFrag2text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bebas_neue"
                     android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
                     android:text="Top Rated Barbers in Your Area"
                     android:textColor="@color/white"
-                    android:textSize="16sp">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <ImageView
                     android:id="@+id/cardViewHFrag2image"
@@ -113,19 +108,18 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
                     android:id="@+id/cardViewHFrag3text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bebas_neue"
                     android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
                     android:text="Barbers Available Right Now"
                     android:textColor="@color/white"
-                    android:textSize="16sp">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <ImageView
                     android:id="@+id/cardViewHFrag3image"
@@ -151,19 +145,18 @@
                 app:cardUseCompatPadding="false">
 
                 <TextView
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
                     android:id="@+id/cardViewHFrag4text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bebas_neue"
                     android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
                     android:text="Newest barbers in your area"
                     android:textColor="@color/white"
-                    android:textSize="16sp">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <ImageView
                     android:id="@+id/cardViewHFrag4image"
@@ -177,6 +170,6 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-        </ScrollView>
+    </ScrollView>
 
 </RelativeLayout>
