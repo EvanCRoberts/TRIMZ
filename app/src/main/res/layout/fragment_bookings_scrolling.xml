@@ -246,6 +246,16 @@
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
+                <Button
+                    android:id="@+id/bookingCard3Cancel"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Cancel?"
+                    app:backgroundTint="#B83232"
+                    app:cornerRadius="20dp" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -308,6 +318,52 @@
                     android:text="Meeting Info"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/bookingCard4Cancel"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Cancel?"
+                    app:backgroundTint="#B83232"
+                    app:cornerRadius="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/newBookingCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_content_cut_24"
+                ></ImageButton>
+
+                <TextView
+                    android:id="@+id/newBookingCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Create a New Booking?"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
 
             </androidx.cardview.widget.CardView>
 
