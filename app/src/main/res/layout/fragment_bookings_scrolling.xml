@@ -37,6 +37,42 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/newBookingCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_content_cut_24"
+                    ></ImageButton>
+
+                <TextView
+                    android:id="@+id/newBookingCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Create a New Booking?"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:id="@+id/bookingCard1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,7 +95,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Date / Time"
+                    android:text="November 12, 1:30 PM"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -76,7 +112,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Barber Name, Rating"
+                    android:text="Barber John Doe"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -93,7 +129,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Meeting Info"
+                    android:text="Monthly Haircut"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -132,9 +168,9 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Date / Time"
+                    android:text="December 12, 4:00 PM"
                     android:textColor="@color/white"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/bookingCard2BarberInfo"
@@ -149,7 +185,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Barber Name, Rating"
+                    android:text="Barber John Doe"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -166,7 +202,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Meeting Info"
+                    android:text="Monthly HairCut"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -208,9 +244,9 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Date / Time"
+                    android:text="January 4, 9:00 AM"
                     android:textColor="@color/white"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/bookingCard3BarberInfo"
@@ -225,7 +261,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Barber Name, Rating"
+                    android:text="Barber Hairy Styles"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -242,7 +278,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Meeting Info"
+                    android:text="Wedding Prep"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -281,9 +317,9 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Date / Time"
+                    android:text="January 12, 1:30 PM"
                     android:textColor="@color/white"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/bookingCard4BarberInfo"
@@ -298,7 +334,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Barber Name, Rating"
+                    android:text="Barber John Doe"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -315,7 +351,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Meeting Info"
+                    android:text="Monthly Haricut"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -331,41 +367,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/newBookingCard"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/grey"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="false"
-                app:cardUseCompatPadding="false">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_baseline_content_cut_24"
-                ></ImageButton>
-
-                <TextView
-                    android:id="@+id/newBookingCardText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebas_neue"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Create a New Booking?"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
-
-
-            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
